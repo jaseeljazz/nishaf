@@ -541,3 +541,21 @@ body.has-sticky .back-top{bottom:84px}
 .not-found > i{font-size:3rem;color:#c9cfca}
 [dir="rtl"] .f-check .n{margin-left:0;margin-right:auto}
 [dir="rtl"] .verified{margin-left:0;margin-right:auto}
+
+/* ---------- Compact product cards on phones ---------- */
+@media (max-width:575.98px){
+  .p-img{aspect-ratio:5/4;padding:8px 12px}
+  .p-badge{top:8px;left:8px;font-size:.64rem;padding:1px 6px}
+  .wish-btn{top:6px;right:6px;width:28px;height:28px;font-size:.8rem}
+  .p-body{padding:8px 10px 10px}
+  .p-brand{font-size:.66rem;margin-bottom:2px}
+  .p-title{font-size:.78rem;line-height:1.3;min-height:2.6em;margin-bottom:3px}
+  .p-rating{font-size:.68rem;margin-bottom:4px}
+  .p-rating .stars{font-size:.62rem}
+  .p-desc{display:none}
+  .p-price{margin-bottom:8px;gap:4px;min-height:0}
+  .p-price .now{font-size:.92rem}
+  .p-price .old{font-size:.68rem}
+  .p-price .quote-link{font-size:.76rem}
+  .p-btn{font-size:.74rem;padding:6px;gap:4px}
+}
