@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop Computer Accessories in Qatar | Keyboards, Mice, SSDs – HalaQStore</title>
+<meta name="description" content="Browse keyboards, mice, monitors, SSDs, RAM, headsets, USB-C hubs and chargers at HalaQStore. Filter by brand, category and price, with same-day delivery in Doha.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<link href="assets/css/store.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Utility bar -->
+<div class="utility-bar">
+  <div class="container-xxl d-flex align-items-center justify-content-between py-2 gap-3">
+    <div class="d-flex align-items-center gap-2 text-truncate"><i class="bi bi-truck"></i><span class="text-truncate">Free Express Delivery across Doha &amp; Qatar on orders over QAR 200</span></div>
+    <div class="d-flex align-items-center gap-3 flex-shrink-0">
+      <a href="#" class="d-none d-md-inline"><i class="bi bi-geo-alt me-1"></i>Store locator</a>
+      <span class="sep d-none d-md-inline-block"></span>
+      <span class="d-none d-sm-inline fw-semibold">QAR</span>
+      <span class="sep d-none d-sm-inline-block"></span>
+      <div class="lang-toggle" role="group" aria-label="Language"><button type="button" class="active" data-lang="en">EN</button><span>/</span><button type="button" data-lang="ar">AR</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="main-header" id="mainHeader">
+  <div class="container-xxl py-3">
+    <div class="d-flex align-items-center gap-2 gap-lg-3">
+      <a href="index.html" class="d-flex align-items-center flex-shrink-0" aria-label="HalaQStore home">
+        <img src="Logo-Hala-Q-Tech-Coloured-Header.webp" alt="HalaQStore - Hala Q Technology" class="brand-logo" id="brandLogo">
+        <span class="brand-fallback" id="brandFallback">
+          <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="9" fill="#616C64"/><path d="M10 11v18M10 20h10M20 11v18" stroke="#fff" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="24.5" cy="20" r="6.5" stroke="#E69C22" stroke-width="3" fill="none"/><path d="M28 24l4 4.5" stroke="#E69C22" stroke-width="3" stroke-linecap="round"/></svg>
+          <span><span class="wordmark">HalaQ<span>Store</span></span><span class="tagline">Hala Q Technology</span></span>
+        </span>
+      </a>
+      <button class="deliver-to d-none d-xl-flex" type="button"><i class="bi bi-geo-alt"></i><span>Deliver to<strong>Doha</strong></span></button>
+
+      <div class="search-wrap d-none d-lg-block mx-auto">
+        <form class="search-group" role="search" action="products.html" method="get">
+          <input type="search" name="q" class="js-search" placeholder="What are you looking for?" autocomplete="off" aria-label="Search products">
+          <button class="search-btn" type="submit"><i class="bi bi-search"></i>Search</button>
+        </form>
+        <div class="search-results" role="listbox"></div>
+      </div>
+
+      <div class="header-icons ms-auto ms-lg-0">
+        <a class="icon-btn" href="products.html?saved=1" aria-label="Wishlist"><i class="bi bi-heart"></i><span class="badge-count primary" id="wishCount">0</span><span class="d-none d-xl-inline">Wishlist</span></a>
+        <button class="icon-btn d-none d-md-flex" type="button"><i class="bi bi-box-seam"></i><span class="d-none d-xl-inline">Orders</span></button>
+        <button class="icon-btn d-none d-sm-flex" type="button"><i class="bi bi-person"></i><span class="d-none d-xl-inline">Sign in</span></button>
+        <button class="icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer" aria-label="Open cart"><i class="bi bi-bag"></i><span class="badge-count accent" id="cartCount">0</span><span class="d-none d-xl-inline">Cart</span></button>
+      </div>
+    </div>
+    <div class="search-wrap d-lg-none mt-3">
+      <form class="search-group" role="search" action="products.html" method="get">
+        <input type="search" name="q" class="js-search" placeholder="Search keyboards, SSDs, monitors…" autocomplete="off" aria-label="Search products">
+        <button class="search-btn" type="submit" aria-label="Search"><i class="bi bi-search"></i></button>
+      </form>
+      <div class="search-results" role="listbox"></div>
+    </div>
+  </div>
+</header>
+
+<!-- Department nav -->
+<nav class="dept-nav" aria-label="Departments">
+  <div class="container-xxl">
+    <div class="dept-scroll">
+      <a href="products.html" class="all-btn"><i class="bi bi-grid-3x3-gap-fill me-1"></i>All</a>
+      <a href="#">Wearables</a>
+      <a href="products.html" class="active">Computer Accessories</a>
+      <a href="#">Cameras &amp; Photography</a>
+      <a href="#">Gaming</a>
+      <a href="#">Printers &amp; Office</a>
+      <a href="#">Health &amp; Personal Care</a>
+      <a href="#">Networking &amp; Infrastructure</a>
+      <a href="#">Components &amp; Storage</a>
+      <a href="#">Computers &amp; Laptops</a>
+      <a href="#">TV, Monitors &amp; Displays</a>
+      <a href="#">Mobiles &amp; Tablets</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="container-xxl">
+  <div class="crumbs"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><a href="index.html">Computer Accessories</a><i class="bi bi-chevron-right"></i><span id="crumbLast">All products</span></div>
+  <div class="page-head">
+    <h1 id="listTitle">All computer accessories</h1>
+    <p id="listSub">Genuine keyboards, mice, monitors, storage and charging gear with official warranty and same-day delivery in Doha.</p>
+  </div>
+</div>
+
+<section class="block pt-3">
+  <div class="container-xxl">
+    <div class="row g-3 g-xl-4">
+      <!-- Filters: sidebar on desktop, drawer on mobile -->
+      <div class="col-lg-3">
+        <aside class="offcanvas-lg offcanvas-start filters-canvas" tabindex="-1" id="filtersPanel" aria-labelledby="filtersLabel">
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="filtersLabel">Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#filtersPanel" aria-label="Close filters"></button>
+          </div>
+          <div class="offcanvas-body p-0 d-block">
+            <div class="filters">
+              <div class="filters-head d-none d-lg-flex"><span><i class="bi bi-sliders2 me-2"></i>Filters</span><button type="button" class="af-clear js-clear-all">Clear all</button></div>
+
+              <div class="f-group">
+                <button class="f-group-head" type="button" data-bs-toggle="collapse" data-bs-target="#fgType" aria-expanded="true" aria-controls="fgType">Category<i class="bi bi-chevron-down"></i></button>
+                <div class="collapse show" id="fgType"><div class="f-opts" id="typeOpts"></div></div>
+              </div>
+
+              <div class="f-group">
+                <button class="f-group-head" type="button" data-bs-toggle="collapse" data-bs-target="#fgBrand" aria-expanded="true" aria-controls="fgBrand">Brand<i class="bi bi-chevron-down"></i></button>
+                <div class="collapse show" id="fgBrand"><div class="f-opts" id="brandOpts"></div></div>
+              </div>
+
+              <div class="f-group">
+                <button class="f-group-head" type="button" data-bs-toggle="collapse" data-bs-target="#fgPrice" aria-expanded="true" aria-controls="fgPrice">Price (QAR)<i class="bi bi-chevron-down"></i></button>
+                <div class="collapse show" id="fgPrice"><div class="f-opts">
+                  <div class="price-inputs">
+                    <input type="number" class="form-control form-control-sm" id="pMin" placeholder="Min" min="0" inputmode="numeric" aria-label="Minimum price in QAR">
+                    <span>–</span>
+                    <input type="number" class="form-control form-control-sm" id="pMax" placeholder="Max" min="0" inputmode="numeric" aria-label="Maximum price in QAR">
+                    <button class="btn btn-hq btn-sm px-3" id="pGo" type="button">Go</button>
+                  </div>
+                  <div class="price-presets mt-2" id="pricePresets"></div>
+                </div></div>
+              </div>
+
+              <div class="f-group">
+                <button class="f-group-head" type="button" data-bs-toggle="collapse" data-bs-target="#fgMore" aria-expanded="true" aria-controls="fgMore">Offers &amp; availability<i class="bi bi-chevron-down"></i></button>
+                <div class="collapse show" id="fgMore"><div class="f-opts">
+                  <label class="f-check"><input type="checkbox" id="fSale"><span>On sale</span><span class="n" id="nSale"></span></label>
+                  <label class="f-check"><input type="checkbox" id="fOnline"><span>Buy online now</span><span class="n" id="nOnline"></span></label>
+                  <label class="f-check"><input type="checkbox" id="fQuote"><span>Business items (quote)</span><span class="n" id="nQuote"></span></label>
+                </div></div>
+              </div>
+            </div>
+          </div>
+          <div class="filters-foot d-lg-none">
+            <button type="button" class="btn btn-outline-hq flex-fill js-clear-all">Clear all</button>
+            <button type="button" class="btn btn-accent flex-fill" data-bs-dismiss="offcanvas" data-bs-target="#filtersPanel" id="showResults">Show results</button>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Results -->
+      <div class="col-lg-9">
+        <div class="list-toolbar">
+          <button class="btn btn-outline-hq btn-sm d-lg-none btn-filter" type="button" data-bs-toggle="offcanvas" data-bs-target="#filtersPanel" aria-controls="filtersPanel"><i class="bi bi-sliders2"></i>Filters<span class="f-badge" id="filterBadge"></span></button>
+          <div class="result-count" id="resultCount" role="status" aria-live="polite"></div>
+          <div class="ms-auto d-flex align-items-center gap-2">
+            <label for="sortSel" class="small text-muted d-none d-sm-inline text-nowrap">Sort by</label>
+            <select class="form-select form-select-sm sort-select" id="sortSel"></select>
+            <div class="view-toggle d-none d-sm-inline-flex" role="group" aria-label="Layout">
+              <button type="button" data-view="grid" aria-label="Grid view" aria-pressed="true"><i class="bi bi-grid-3x3-gap"></i></button>
+              <button type="button" data-view="list" aria-label="List view" aria-pressed="false"><i class="bi bi-list-ul"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="active-filters" id="activeFilters"></div>
+        <div class="product-grid" id="grid"></div>
+        <div class="load-more-wrap" id="loadMoreWrap"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Business banner -->
+<section class="block pt-0">
+  <div class="container-xxl">
+    <div class="biz-banner">
+      <div class="bb-img"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80" alt="Modern office interior" loading="lazy"></div>
+      <div class="bb-body">
+        <span class="bb-flag">For business</span>
+        <h2>Buying for a team?</h2>
+        <p>Get volume pricing on monitors, docks, keyboard and mouse sets and chargers, with a dedicated account manager and invoice billing.</p>
+        <a href="#" class="btn btn-accent px-4 js-quote-general">Request a bulk quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEO -->
+<section class="block pt-0">
+  <div class="container-xxl">
+    <div class="seo-block">
+      <h2>Buy computer accessories online in Qatar</h2>
+      <p>Every product at HalaQStore is genuine stock with official warranty, handled locally in Doha. Orders placed before 2 PM arrive the same day across Doha, and delivery is free on orders over QAR 200. Not sure what fits your laptop or PC? Send us the model on WhatsApp and we’ll check before you order.</p>
+      <h3>Popular in Qatar</h3>
+      <div>
+        <a href="products.html?brand=Logitech" class="chip">Logitech accessories</a>
+        <a href="products.html?brand=Razer" class="chip">Razer gaming gear</a>
+        <a href="products.html?type=nvme" class="chip">NVMe SSDs</a>
+        <a href="products.html?type=ram" class="chip">DDR5 RAM</a>
+        <a href="products.html?type=monitor" class="chip">Monitors</a>
+        <a href="products.html?type=hub" class="chip">USB-C hubs &amp; docks</a>
+        <a href="products.html?sale=1" class="chip">Deals</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Newsletter -->
+<section class="nl-band">
+  <div class="container-xxl">
+    <div class="row align-items-center">
+      <div class="col-md-6"><h2>Get the latest tech accessory deals</h2><p>Subscribe for new arrivals, tips and exclusive offers. No spam, unsubscribe anytime.</p></div>
+      <div class="col-md-6">
+        <form class="nl-form" id="nlForm" novalidate><input type="email" id="nlEmail" placeholder="you@example.com" aria-label="Email address" required><button class="btn btn-accent px-4" type="submit">Subscribe</button></form>
+        <div class="nl-msg" id="nlMsg" role="status"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container-xxl">
+    <div class="f-row row g-4">
+      <div class="col-lg-4"><h6>Popular brands</h6><ul class="f-links"><li><a href="products.html?brand=Logitech">Logitech</a></li><li><a href="products.html?brand=Razer">Razer</a></li><li><a href="products.html?brand=Samsung">Samsung</a></li><li><a href="products.html?brand=Kingston">Kingston</a></li><li><a href="products.html?brand=Anker">Anker</a></li><li><a href="products.html?brand=TP-Link">TP-Link</a></li><li><a href="products.html?brand=Dell">Dell</a></li></ul></div>
+      <div class="col-lg-4"><h6>Shop by type</h6><ul class="f-links"><li><a href="products.html?type=keyboard">Keyboards</a></li><li><a href="products.html?type=mouse">Mice</a></li><li><a href="products.html?type=monitor">Monitors</a></li><li><a href="products.html?type=nvme">SSDs</a></li><li><a href="products.html?type=ram">Memory</a></li><li><a href="products.html?type=headset">Headsets</a></li><li><a href="products.html?type=charger">Chargers</a></li></ul></div>
+      <div class="col-lg-4"><h6>Popular searches</h6><ul class="f-links"><li><a href="products.html?q=Wireless">Wireless mouse</a></li><li><a href="products.html?q=Mechanical">Mechanical keyboard</a></li><li><a href="products.html?q=1TB">1TB SSD</a></li><li><a href="products.html?q=DDR5">DDR5 RAM</a></li><li><a href="products.html?q=USB-C">USB-C hub</a></li><li><a href="products.html?q=Gaming">Gaming gear</a></li></ul></div>
+    </div>
+    <div class="f-row">
+      <h6>Shop</h6>
+      <div class="f-shop"><a href="#">Wearables</a><a href="products.html">Computer Accessories</a><a href="#">Cameras &amp; Photography</a><a href="#">Gaming</a><a href="#">Printers &amp; Office</a><a href="#">Health &amp; Personal Care</a><a href="#">Networking</a><a href="#">Components &amp; Storage</a><a href="#">Computers &amp; Laptops</a><a href="#">TV, Monitors &amp; Displays</a><a href="#">Mobiles &amp; Tablets</a><a href="#">Electronics</a><a href="#">Cables &amp; Connectivity</a><a href="#">Smart Home</a><a href="#">Home, Kitchen &amp; Lifestyle</a><a href="#">Power &amp; Charging</a><a href="#">Audio</a><a href="#">Software &amp; Licences</a></div>
+    </div>
+    <div class="f-row row g-4">
+      <div class="col-lg-5 col-md-6">
+        <div class="mb-2" style="font-family:var(--font-head);font-weight:700;font-size:1.2rem;color:#fff">HalaQ<span style="color:var(--hq-accent)">Store</span></div>
+        <ul class="f-list f-contact">
+          <li><i class="bi bi-geo-alt"></i><span>Hala Q Technology, C-Ring Road, Al Sadd, Doha, Qatar</span></li>
+          <li><i class="bi bi-telephone"></i><a href="tel:+97440001234">+974 4000 1234</a></li>
+          <li><i class="bi bi-envelope"></i><a href="mailto:support@halaqstore.com">support@halaqstore.com</a></li>
+        </ul>
+        <a href="https://wa.me/97440001234" target="_blank" rel="noopener" class="whatsapp-btn"><i class="bi bi-whatsapp"></i>Chat on WhatsApp</a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-6"><h6>Help</h6><ul class="f-list"><li><a href="#">Track order</a></li><li><a href="#">Your cart</a></li><li><a href="#">Returns &amp; refunds</a></li><li><a href="#">Warranty claims</a></li></ul></div>
+      <div class="col-lg-4 col-md-3 col-6"><h6>About</h6><ul class="f-list"><li><a href="#">Blog</a></li><li><a href="#">Contact</a></li><li><a href="#">Returns policy</a></li><li><a href="#">Privacy policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div>© <span id="yr">2026</span> Hala Q Technology. All rights reserved.</div>
+      <div class="pay-icons" aria-label="Accepted payment methods">
+        <span class="pay-icon" title="QPay"><svg viewBox="0 0 60 20"><text x="0" y="15" font-family="Arial,sans-serif" font-weight="700" font-size="15" fill="#8A1538">Q</text><text x="11" y="15" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="#222">Pay</text></svg></span>
+        <span class="pay-icon" title="Visa"><svg viewBox="0 0 48 16"><text x="0" y="14" font-family="Arial,sans-serif" font-style="italic" font-weight="900" font-size="16" fill="#1A1F71">VISA</text></svg></span>
+        <span class="pay-icon" title="Mastercard"><svg viewBox="0 0 34 20"><circle cx="12" cy="10" r="9" fill="#EB001B"/><circle cx="22" cy="10" r="9" fill="#F79E1B" fill-opacity=".9"/></svg></span>
+        <span class="pay-icon" title="Apple Pay"><svg viewBox="0 0 54 20"><path d="M9.6 4.2c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 1.9-.5 2.5-1.2zm.9 1.4c-1.4-.1-2.6.8-3.2.8-.7 0-1.7-.8-2.8-.7C3 5.7 1.7 6.5 1 7.8c-1.5 2.6-.4 6.4 1.1 8.5.7 1 1.5 2.2 2.6 2.1 1-.1 1.4-.7 2.7-.7 1.2 0 1.6.7 2.7.6 1.1 0 1.8-1 2.5-2.1.8-1.1 1.1-2.2 1.1-2.3 0 0-2.2-.8-2.2-3.3 0-2.1 1.7-3.1 1.8-3.1-1-1.4-2.5-1.6-3-1.6z" fill="#000"/><text x="17" y="15" font-family="Arial,sans-serif" font-weight="600" font-size="13" fill="#000">Pay</text></svg></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Cart drawer -->
+<div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title" id="cartDrawerLabel">Your cart <span class="text-muted fw-normal fs-6" id="drawerCount">(0 items)</span></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="ship-progress"><div id="shipText"></div><div class="bar"><span id="shipBar" style="width:0%"></span></div></div>
+  <div class="offcanvas-body pt-0" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="d-flex justify-content-between fw-semibold mb-1"><span>Subtotal</span><strong id="cartSubtotal" style="font-family:var(--font-head);font-size:1.15rem;color:var(--hq-primary-dark)">QAR 0.00</strong></div>
+    <p class="small text-muted mb-3">Delivery and installation options shown at checkout.</p>
+    <button class="btn btn-accent w-100 py-2 mb-2" id="checkoutBtn" disabled>Checkout securely</button>
+    <button class="btn btn-outline-hq w-100 py-2" data-bs-dismiss="offcanvas">Continue shopping</button>
+  </div>
+</div>
+
+
+<!-- Request a quote -->
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title" id="quoteTitle">Request a quote</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="quoteFormWrap">
+          <p class="small text-muted mb-3">Our business team replies within 2 working hours with volume pricing and delivery options.</p>
+          <div class="quote-item mb-3 d-none" id="quoteItem"><img id="quoteImg" src="" alt=""><div><div class="p-brand mb-0" id="quoteBrand"></div><div class="small fw-semibold" id="quoteName"></div></div></div>
+          <form id="quoteForm" novalidate>
+            <div class="row g-2">
+              <div class="col-sm-6"><label class="form-label small fw-semibold" for="qName">Full name</label><input class="form-control" id="qName" required></div>
+              <div class="col-sm-6"><label class="form-label small fw-semibold" for="qPhone">Mobile number</label><div class="input-group"><span class="input-group-text">+974</span><input class="form-control" id="qPhone" inputmode="numeric" maxlength="8" placeholder="5555 1234" required></div></div>
+              <div class="col-sm-8"><label class="form-label small fw-semibold" for="qCompany">Company <span class="text-muted fw-normal">(optional)</span></label><input class="form-control" id="qCompany"></div>
+              <div class="col-sm-4"><label class="form-label small fw-semibold" for="qQty">Quantity</label><input class="form-control" id="qQty" type="number" min="1" value="1"></div>
+              <div class="col-12"><label class="form-label small fw-semibold" for="qNotes">What do you need?</label><textarea class="form-control" id="qNotes" rows="3" placeholder="e.g. 25 keyboard and mouse sets and 10 docking stations for our office in West Bay"></textarea></div>
+            </div>
+            <div class="small text-danger mt-2" id="quoteErr" role="alert"></div>
+            <div class="d-flex gap-2 mt-3">
+              <button type="submit" class="btn btn-accent flex-fill py-2">Send request</button>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-outline-hq py-2" id="quoteWa"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
+            </div>
+          </form>
+        </div>
+        <div id="quoteDone" class="text-center py-4 d-none">
+          <i class="bi bi-check-circle-fill" style="font-size:3rem;color:var(--hq-primary)"></i>
+          <h5 class="mt-3">Request sent</h5>
+          <p class="text-muted small mb-3">We’ll call you on <strong id="quoteDonePhone"></strong> within 2 working hours.</p>
+          <button class="btn btn-hq px-4" data-bs-dismiss="modal">Continue shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:1090">
+  <div id="cartToast" class="toast hq-toast" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="2600">
+    <div class="toast-body"><img id="toastImg" src="" alt=""><div class="flex-fill"><div class="fw-semibold">Added to HalaQStore cart!</div><div class="small opacity-75 text-truncate" style="max-width:200px" id="toastTitle"></div></div><button type="button" class="btn btn-sm btn-accent" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer">View</button></div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/catalog.js"></script>
+<script src="assets/js/store.js"></script>
+<script>
+/* =========================================================
+   Product listing: filters, sort, layout and load more.
+   Filters live in the URL, so every view can be linked to:
+   products.html?type=mouse,keyboard&brand=Logitech&min=100&sort=price-asc
+   ========================================================= */
+$(function () {
+  const PER = 12;
+  const PRESETS = [[null, 100, 'Under 100'], [100, 300, '100 – 300'], [300, 600, '300 – 600'], [600, null, 'Over 600']];
+  const SORTS = { featured: 'Featured', 'price-asc': 'Price: low to high', 'price-desc': 'Price: high to low', rating: 'Top rated', newest: 'Newest', name: 'Name: A to Z' };
+  const DEFAULT_SUB = 'Genuine keyboards, mice, monitors, storage and charging gear with official warranty and same-day delivery in Doha.';
+
+  const prm = new URLSearchParams(location.search);
+  const list = k => (prm.get(k) || '').split(',').map(s => s.trim()).filter(Boolean);
+  const num = k => { const v = parseFloat(prm.get(k)); return isFinite(v) && v >= 0 ? v : null; };
+  const S = {
+    q: (prm.get('q') || '').trim(),
+    types: list('type').filter(k => TYPES.some(t => t.key === k)),
+    brands: list('brand').map(b => (BRANDS.find(x => x.key.toLowerCase() === b.toLowerCase()) || {}).key).filter(Boolean),
+    min: num('min'), max: num('max'),
+    sale: prm.get('sale') === '1',
+    online: prm.get('avail') === 'online',
+    quote: prm.get('avail') === 'quote',
+    saved: prm.get('saved') === '1',
+    sort: SORTS[prm.get('sort')] ? prm.get('sort') : 'featured',
+    shown: PER
+  };
+  let view = HQ.store.get('hq_view', 'grid');
+
+  /* ---------- Filtering ---------- */
+  function test(p, skip) {
+    if (S.saved && !HQ.isWished(p.id)) return false;
+    if (S.q) {
+      const hay = (p.title + ' ' + p.brand + ' ' + p.desc + ' ' + typeLabel(p.type)).toLowerCase();
+      if (!S.q.toLowerCase().split(/\s+/).every(w => hay.includes(w))) return false;
+    }
+    if (skip !== 'type' && S.types.length && !S.types.includes(p.type)) return false;
+    if (skip !== 'brand' && S.brands.length && !S.brands.includes(p.brand)) return false;
+    if (skip !== 'price' && (S.min !== null || S.max !== null)) {
+      if (p.quote) return false;
+      if (S.min !== null && p.price < S.min) return false;
+      if (S.max !== null && p.price > S.max) return false;
+    }
+    if (skip !== 'sale' && S.sale && !p.old) return false;
+    if (skip !== 'avail' && S.online !== S.quote) {
+      if (S.online && p.quote) return false;
+      if (S.quote && !p.quote) return false;
+    }
+    return true;
+  }
+  const priceKey = p => p.quote ? 1e9 : p.price;
+  const SORTERS = {
+    featured: (a, b) => (b.featured | 0) - (a.featured | 0) || (a.quote | 0) - (b.quote | 0) || a.id - b.id,
+    'price-asc': (a, b) => priceKey(a) - priceKey(b) || a.id - b.id,
+    'price-desc': (a, b) => (b.quote ? -1 : b.price) - (a.quote ? -1 : a.price) || a.id - b.id,
+    rating: (a, b) => b.rating - a.rating || b.reviews - a.reviews,
+    newest: (a, b) => (b.isNew | 0) - (a.isNew | 0) || b.id - a.id,
+    name: (a, b) => a.title.localeCompare(b.title)
+  };
+
+  /* ---------- Static filter markup ---------- */
+  const optHTML = (f, v, label) => `<label class="f-check"><input type="checkbox" value="${esc(v)}" data-f="${f}"><span>${esc(label)}</span><span class="n"></span></label>`;
+  $('#typeOpts').html(TYPES.map(t => optHTML('type', t.key, t.label)).join(''));
+  $('#brandOpts').html(BRANDS.map(b => optHTML('brand', b.key, b.key)).join(''));
+  $('#pricePresets').html(PRESETS.map((r, i) => `<button type="button" class="chip" data-preset="${i}" aria-pressed="false">${r[2]}</button>`).join(''));
+  $('#sortSel').html(Object.entries(SORTS).map(([k, v]) => `<option value="${k}">${v}</option>`).join('')).val(S.sort);
+  $('.js-search').val(S.q);
+
+  /* ---------- Heading ---------- */
+  function heading() {
+    const tl = S.types.length === 1 ? typeLabel(S.types[0]) : '';
+    const bl = S.brands.length === 1 ? S.brands[0] : '';
+    if (S.saved) return ['Your wishlist', 'Products you’ve saved on this device. Tap the heart on any product to add or remove it.'];
+    if (S.q) return [`Results for “${S.q}”`, 'Narrow your search with the filters, or try a brand or product type.'];
+    if (tl && bl) return [`${bl} ${tl}`, `Genuine ${bl} ${tl.toLowerCase()} with official warranty and same-day delivery in Doha.`];
+    if (tl) return [tl, TYPE_INFO[S.types[0]].about];
+    if (bl) return [`${bl} accessories`, `Shop genuine ${bl} ${BRANDS.find(b => b.key === bl).sub.toLowerCase()} with official warranty and same-day delivery in Doha.`];
+    if (S.sale && !S.types.length && !S.brands.length) return ['Deals on computer accessories', 'Current price drops on genuine accessories, while stock lasts.'];
+    return ['All computer accessories', DEFAULT_SUB];
+  }
+
+  /* ---------- Render ---------- */
+  function activeChips() {
+    const c = [];
+    if (S.q) c.push(['q', `“${S.q}”`]);
+    S.types.forEach(k => c.push(['type:' + k, typeLabel(k)]));
+    S.brands.forEach(b => c.push(['brand:' + b, b]));
+    if (S.min !== null || S.max !== null) c.push(['price', S.min !== null && S.max !== null ? `QAR ${S.min} – ${S.max}` : S.min !== null ? `Over QAR ${S.min}` : `Under QAR ${S.max}`]);
+    if (S.sale) c.push(['sale', 'On sale']);
+    if (S.online !== S.quote) c.push(['avail', S.online ? 'Buy online now' : 'Business items']);
+    return c;
+  }
+
+  function update(keepShown) {
+    if (!keepShown) S.shown = PER;
+    const res = P.filter(p => test(p)).sort(SORTERS[S.sort]);
+
+    // facet counts and checked state
+    $('#typeOpts .f-check, #brandOpts .f-check').each(function () {
+      const $in = $(this).find('input'); const f = $in.data('f'); const v = $in.val();
+      const n = P.filter(p => (f === 'type' ? p.type : p.brand) === v && test(p, f)).length;
+      const on = (f === 'type' ? S.types : S.brands).includes(v);
+      $in.prop('checked', on);
+      $(this).toggleClass('disabled', !n && !on).find('.n').text(n);
+    });
+    $('#fSale').prop('checked', S.sale); $('#nSale').text(P.filter(p => p.old && test(p, 'sale')).length);
+    $('#fOnline').prop('checked', S.online); $('#nOnline').text(P.filter(p => !p.quote && test(p, 'avail')).length);
+    $('#fQuote').prop('checked', S.quote); $('#nQuote').text(P.filter(p => p.quote && test(p, 'avail')).length);
+    $('#pMin').val(S.min === null ? '' : S.min); $('#pMax').val(S.max === null ? '' : S.max);
+    $('[data-preset]').each(function () { const [a, b] = PRESETS[$(this).data('preset')]; const on = S.min === a && S.max === b; $(this).toggleClass('active', on).attr('aria-pressed', on); });
+
+    // heading
+    const [h, sub] = heading();
+    $('#listTitle').text(h); $('#listSub').text(sub); $('#crumbLast').text(h);
+    document.title = S.saved ? 'Your wishlist | HalaQStore' : `${h} in Qatar | HalaQStore`;
+
+    // active filter chips
+    const chips = activeChips();
+    $('#activeFilters').html(chips.length ? chips.map(([k, l]) => `<span class="af-chip">${esc(l)}<button type="button" data-rm="${esc(k)}" aria-label="Remove filter ${esc(l)}"><i class="bi bi-x-lg"></i></button></span>`).join('') + '<button type="button" class="af-clear js-clear-all">Clear all</button>' : '');
+    $('#filterBadge').text(chips.length).toggleClass('show', chips.length > 0);
+
+    // count + grid
+    $('#resultCount').html(`<strong>${res.length}</strong> ${res.length === 1 ? 'product' : 'products'}`);
+    $('#showResults').text(res.length ? `Show ${res.length} result${res.length === 1 ? '' : 's'}` : 'No results');
+    $('.view-toggle button').each(function () { const on = $(this).data('view') === view; $(this).toggleClass('active', on).attr('aria-pressed', on); });
+    const $g = $('#grid').toggleClass('list-view', view === 'list');
+    if (!res.length) {
+      $g.html(S.saved && !chips.length
+        ? '<div class="grid-empty"><i class="bi bi-heart"></i><h2>Your wishlist is empty</h2><p class="mb-3">Tap the heart on any product to save it here for later.</p><a href="products.html" class="btn btn-hq px-4">Browse accessories</a></div>'
+        : '<div class="grid-empty"><i class="bi bi-search"></i><h2>No products match these filters</h2><p class="mb-3">Try removing a filter, widening the price range or searching for a brand.</p><button type="button" class="btn btn-hq px-4 js-clear-all">Clear all filters</button></div>');
+    } else {
+      $g.html(res.slice(0, S.shown).map(cardHTML).join(''));
+    }
+    HQ.syncWish();
+
+    // load more
+    const shown = Math.min(S.shown, res.length);
+    $('#loadMoreWrap').html(res.length > PER
+      ? `<div class="load-progress">Showing ${shown} of ${res.length} products<div class="bar"><span style="width:${shown / res.length * 100}%"></span></div></div>${res.length > S.shown ? '<button type="button" class="btn btn-outline-hq px-4" id="loadMore">Show more products</button>' : ''}`
+      : '');
+
+    syncURL();
+  }
+
+  function syncURL() {
+    const u = new URLSearchParams();
+    if (S.q) u.set('q', S.q);
+    if (S.types.length) u.set('type', S.types.join(','));
+    if (S.brands.length) u.set('brand', S.brands.join(','));
+    if (S.min !== null) u.set('min', S.min);
+    if (S.max !== null) u.set('max', S.max);
+    if (S.sale) u.set('sale', '1');
+    if (S.online !== S.quote) u.set('avail', S.online ? 'online' : 'quote');
+    if (S.saved) u.set('saved', '1');
+    if (S.sort !== 'featured') u.set('sort', S.sort);
+    const qs = u.toString().replace(/%2C/g, ',');
+    history.replaceState(null, '', location.pathname + (qs ? '?' + qs : ''));
+  }
+
+  /* ---------- Events ---------- */
+  $(document).on('change', 'input[data-f]', function () {
+    const arr = $(this).data('f') === 'type' ? S.types : S.brands;
+    const v = this.value;
+    if (this.checked) { if (!arr.includes(v)) arr.push(v); } else arr.splice(arr.indexOf(v), 1);
+    update();
+  });
+  $('#fSale').on('change', function () { S.sale = this.checked; update(); });
+  $('#fOnline').on('change', function () { S.online = this.checked; update(); });
+  $('#fQuote').on('change', function () { S.quote = this.checked; update(); });
+
+  function applyPrice() {
+    const a = parseFloat($('#pMin').val()), b = parseFloat($('#pMax').val());
+    S.min = isFinite(a) && a >= 0 ? a : null;
+    S.max = isFinite(b) && b >= 0 ? b : null;
+    if (S.min !== null && S.max !== null && S.min > S.max) [S.min, S.max] = [S.max, S.min];
+    update();
+  }
+  $('#pGo').on('click', applyPrice);
+  $('#pMin, #pMax').on('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); applyPrice(); } });
+  $(document).on('click', '[data-preset]', function () {
+    const [a, b] = PRESETS[$(this).data('preset')];
+    const on = S.min === a && S.max === b;
+    S.min = on ? null : a; S.max = on ? null : b; update();
+  });
+
+  $(document).on('click', '[data-rm]', function () {
+    const raw = $(this).attr('data-rm'); const i = raw.indexOf(':');
+    const k = i < 0 ? raw : raw.slice(0, i), v = i < 0 ? '' : raw.slice(i + 1);
+    if (k === 'type') S.types.splice(S.types.indexOf(v), 1);
+    if (k === 'brand') S.brands.splice(S.brands.indexOf(v), 1);
+    if (k === 'price') S.min = S.max = null;
+    if (k === 'sale') S.sale = false;
+    if (k === 'avail') S.online = S.quote = false;
+    if (k === 'q') { S.q = ''; $('.js-search').val(''); }
+    update();
+  });
+  $(document).on('click', '.js-clear-all', function () {
+    Object.assign(S, { q: '', types: [], brands: [], min: null, max: null, sale: false, online: false, quote: false });
+    $('.js-search').val(''); update();
+  });
+
+  $('#sortSel').on('change', function () { S.sort = this.value; update(); });
+  $('.view-toggle button').on('click', function () { view = $(this).data('view'); HQ.store.set('hq_view', view); update(true); });
+  $(document).on('click', '#loadMore', function () {
+    const from = S.shown; S.shown += PER; update(true);
+    $('#grid .p-card').eq(from).find('.p-title a').trigger('focus');
+  });
+  $(document).on('hq:wish', () => { if (S.saved) update(true); });
+
+  update();
+});
+</script>
+</body>
+</html>

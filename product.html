@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product details | HalaQStore</title>
+<meta name="description" content="Genuine computer accessories with official warranty and same-day delivery in Doha.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<link href="assets/css/store.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Utility bar -->
+<div class="utility-bar">
+  <div class="container-xxl d-flex align-items-center justify-content-between py-2 gap-3">
+    <div class="d-flex align-items-center gap-2 text-truncate"><i class="bi bi-truck"></i><span class="text-truncate">Free Express Delivery across Doha &amp; Qatar on orders over QAR 200</span></div>
+    <div class="d-flex align-items-center gap-3 flex-shrink-0">
+      <a href="#" class="d-none d-md-inline"><i class="bi bi-geo-alt me-1"></i>Store locator</a>
+      <span class="sep d-none d-md-inline-block"></span>
+      <span class="d-none d-sm-inline fw-semibold">QAR</span>
+      <span class="sep d-none d-sm-inline-block"></span>
+      <div class="lang-toggle" role="group" aria-label="Language"><button type="button" class="active" data-lang="en">EN</button><span>/</span><button type="button" data-lang="ar">AR</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="main-header" id="mainHeader">
+  <div class="container-xxl py-3">
+    <div class="d-flex align-items-center gap-2 gap-lg-3">
+      <a href="index.html" class="d-flex align-items-center flex-shrink-0" aria-label="HalaQStore home">
+        <img src="Logo-Hala-Q-Tech-Coloured-Header.webp" alt="HalaQStore - Hala Q Technology" class="brand-logo" id="brandLogo">
+        <span class="brand-fallback" id="brandFallback">
+          <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="9" fill="#616C64"/><path d="M10 11v18M10 20h10M20 11v18" stroke="#fff" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="24.5" cy="20" r="6.5" stroke="#E69C22" stroke-width="3" fill="none"/><path d="M28 24l4 4.5" stroke="#E69C22" stroke-width="3" stroke-linecap="round"/></svg>
+          <span><span class="wordmark">HalaQ<span>Store</span></span><span class="tagline">Hala Q Technology</span></span>
+        </span>
+      </a>
+      <button class="deliver-to d-none d-xl-flex" type="button"><i class="bi bi-geo-alt"></i><span>Deliver to<strong>Doha</strong></span></button>
+
+      <div class="search-wrap d-none d-lg-block mx-auto">
+        <form class="search-group" role="search" action="products.html" method="get">
+          <input type="search" name="q" class="js-search" placeholder="What are you looking for?" autocomplete="off" aria-label="Search products">
+          <button class="search-btn" type="submit"><i class="bi bi-search"></i>Search</button>
+        </form>
+        <div class="search-results" role="listbox"></div>
+      </div>
+
+      <div class="header-icons ms-auto ms-lg-0">
+        <a class="icon-btn" href="products.html?saved=1" aria-label="Wishlist"><i class="bi bi-heart"></i><span class="badge-count primary" id="wishCount">0</span><span class="d-none d-xl-inline">Wishlist</span></a>
+        <button class="icon-btn d-none d-md-flex" type="button"><i class="bi bi-box-seam"></i><span class="d-none d-xl-inline">Orders</span></button>
+        <button class="icon-btn d-none d-sm-flex" type="button"><i class="bi bi-person"></i><span class="d-none d-xl-inline">Sign in</span></button>
+        <button class="icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer" aria-label="Open cart"><i class="bi bi-bag"></i><span class="badge-count accent" id="cartCount">0</span><span class="d-none d-xl-inline">Cart</span></button>
+      </div>
+    </div>
+    <div class="search-wrap d-lg-none mt-3">
+      <form class="search-group" role="search" action="products.html" method="get">
+        <input type="search" name="q" class="js-search" placeholder="Search keyboards, SSDs, monitors…" autocomplete="off" aria-label="Search products">
+        <button class="search-btn" type="submit" aria-label="Search"><i class="bi bi-search"></i></button>
+      </form>
+      <div class="search-results" role="listbox"></div>
+    </div>
+  </div>
+</header>
+
+<!-- Department nav -->
+<nav class="dept-nav" aria-label="Departments">
+  <div class="container-xxl">
+    <div class="dept-scroll">
+      <a href="products.html" class="all-btn"><i class="bi bi-grid-3x3-gap-fill me-1"></i>All</a>
+      <a href="#">Wearables</a>
+      <a href="products.html" class="active">Computer Accessories</a>
+      <a href="#">Cameras &amp; Photography</a>
+      <a href="#">Gaming</a>
+      <a href="#">Printers &amp; Office</a>
+      <a href="#">Health &amp; Personal Care</a>
+      <a href="#">Networking &amp; Infrastructure</a>
+      <a href="#">Components &amp; Storage</a>
+      <a href="#">Computers &amp; Laptops</a>
+      <a href="#">TV, Monitors &amp; Displays</a>
+      <a href="#">Mobiles &amp; Tablets</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="container-xxl">
+  <div class="crumbs" id="crumbs"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><a href="products.html">Computer Accessories</a></div>
+</div>
+
+<!-- Product -->
+<section class="pdp" id="pdp">
+  <div class="container-xxl">
+    <div class="row g-4 g-xl-5">
+      <div class="col-lg-6">
+        <div class="pdp-gallery">
+          <div class="pdp-main" id="pdpMain" tabindex="0" role="button" aria-label="Zoom image">
+            <span id="pdpBadge"></span>
+            <img id="pdpImg" src="data:," alt="">
+            <button class="pdp-arrow prev" type="button" aria-label="Previous image"><i class="bi bi-chevron-left"></i></button>
+            <button class="pdp-arrow next" type="button" aria-label="Next image"><i class="bi bi-chevron-right"></i></button>
+            <span class="zoom-hint"><i class="bi bi-zoom-in"></i>Click to zoom</span>
+          </div>
+          <div class="pdp-thumbs" id="pdpThumbs" aria-label="Product images"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <a class="pdp-brand" id="pdpBrand" href="products.html"></a>
+        <h1 class="pdp-title" id="pdpTitle"></h1>
+        <div class="pdp-meta">
+          <a href="#details" class="pdp-rating js-to-reviews" id="pdpRating"></a>
+          <span class="sep-dot"></span>
+          <span>SKU <strong id="pdpSku"></strong></span>
+          <span class="sep-dot"></span>
+          <span id="pdpWarranty"></span>
+        </div>
+        <p class="pdp-desc" id="pdpDesc"></p>
+        <div class="key-specs" id="pdpKeySpecs"></div>
+        <div id="pdpBuy"></div>
+        <div class="delivery-card" id="pdpDelivery"></div>
+        <div class="share-row">
+          <span>Share</span>
+          <a class="share-btn" id="shareWa" href="#" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a class="share-btn" id="shareMail" href="#" aria-label="Share by email"><i class="bi bi-envelope"></i></a>
+          <button class="share-btn" id="shareCopy" type="button" aria-label="Copy link"><i class="bi bi-link-45deg"></i></button>
+          <span id="copyMsg" role="status"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Details tabs -->
+<section class="block pt-3" id="details">
+  <div class="container-xxl">
+    <div class="panel">
+      <ul class="nav pdp-tabs" role="tablist">
+        <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabOverview" type="button" role="tab" aria-controls="tabOverview" aria-selected="true">Overview</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabSpecs" type="button" role="tab" aria-controls="tabSpecs" aria-selected="false">Specifications</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabBox" type="button" role="tab" aria-controls="tabBox" aria-selected="false">In the box</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="reviewsTabBtn" data-bs-toggle="tab" data-bs-target="#tabReviews" type="button" role="tab" aria-controls="tabReviews" aria-selected="false">Reviews<span class="count" id="tabRevCount"></span></button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabDelivery" type="button" role="tab" aria-controls="tabDelivery" aria-selected="false">Delivery &amp; returns</button></li>
+      </ul>
+      <div class="tab-content pt-4">
+        <div class="tab-pane fade show active" id="tabOverview" role="tabpanel" tabindex="0"></div>
+        <div class="tab-pane fade" id="tabSpecs" role="tabpanel" tabindex="0"></div>
+        <div class="tab-pane fade" id="tabBox" role="tabpanel" tabindex="0"></div>
+        <div class="tab-pane fade" id="tabReviews" role="tabpanel" tabindex="0"></div>
+        <div class="tab-pane fade" id="tabDelivery" role="tabpanel" tabindex="0">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h2>Delivery</h2>
+              <ul class="pdp-features">
+                <li><i class="bi bi-truck"></i><span>Same-day delivery across Doha on orders placed before 2 PM. Later orders arrive the next day.</span></li>
+                <li><i class="bi bi-gift"></i><span>Free express delivery on orders over QAR 200.</span></li>
+                <li><i class="bi bi-geo-alt"></i><span>Delivery to Al Wakrah, Al Khor, Lusail and the rest of Qatar within 1 to 2 working days.</span></li>
+                <li><i class="bi bi-telephone"></i><span>The courier calls before arriving, and you can track your order in real time.</span></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h2>Returns &amp; warranty</h2>
+              <ul class="pdp-features">
+                <li><i class="bi bi-arrow-counterclockwise"></i><span>Unopened items can be returned within 7 days for a full refund.</span></li>
+                <li><i class="bi bi-arrow-left-right"></i><span>Opened keyboards, mice and headsets can be exchanged within 7 days in original condition with all accessories.</span></li>
+                <li><i class="bi bi-shield-check"></i><span>Warranty claims are handled for you at our Doha store, so you don’t deal with the manufacturer.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Related rails -->
+<section class="block pt-0" id="similarBlock">
+  <div class="container-xxl"><div class="panel">
+    <div class="block-head"><h2 class="block-title" id="similarTitle">Similar products</h2><a href="products.html" class="view-all" id="similarAll">View all <i class="bi bi-chevron-right"></i></a></div>
+    <div class="rail-wrap">
+      <button class="rail-btn prev" aria-label="Scroll left"><i class="bi bi-chevron-left"></i></button>
+      <div class="rail product-rail" id="similarRail"></div>
+      <button class="rail-btn next" aria-label="Scroll right"><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div></div>
+</section>
+
+<section class="block pt-0" id="brandBlock">
+  <div class="container-xxl"><div class="panel">
+    <div class="block-head"><h2 class="block-title" id="brandTitle">More from this brand</h2><a href="products.html" class="view-all" id="brandAll">View all <i class="bi bi-chevron-right"></i></a></div>
+    <div class="rail-wrap">
+      <button class="rail-btn prev" aria-label="Scroll left"><i class="bi bi-chevron-left"></i></button>
+      <div class="rail product-rail" id="brandRailP"></div>
+      <button class="rail-btn next" aria-label="Scroll right"><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div></div>
+</section>
+
+<section class="block pt-0 d-none" id="recentBlock">
+  <div class="container-xxl"><div class="panel">
+    <div class="block-head"><h2 class="block-title">Recently viewed</h2></div>
+    <div class="rail-wrap">
+      <button class="rail-btn prev" aria-label="Scroll left"><i class="bi bi-chevron-left"></i></button>
+      <div class="rail product-rail" id="recentRail"></div>
+      <button class="rail-btn next" aria-label="Scroll right"><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div></div>
+</section>
+
+<!-- Not found -->
+<section class="block d-none" id="notFound">
+  <div class="container-xxl">
+    <div class="panel not-found">
+      <i class="bi bi-box-seam"></i>
+      <h1 class="h4 mt-3">We couldn’t find that product</h1>
+      <p class="text-muted mb-4">It may have sold out or the link may be wrong. Browse the full range or search for what you need.</p>
+      <a href="products.html" class="btn btn-hq px-4">Browse all accessories</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Sticky buy bar -->
+<div class="sticky-buy" id="stickyBuy" aria-hidden="true">
+  <div class="container-xxl d-flex align-items-center gap-3 py-2">
+    <img id="sbImg" src="data:," alt="">
+    <div class="flex-fill" style="min-width:0"><div class="sb-title" id="sbTitle"></div><div class="sb-price" id="sbPrice"></div></div>
+    <div id="sbAction"></div>
+  </div>
+</div>
+
+<!-- Newsletter -->
+<section class="nl-band">
+  <div class="container-xxl">
+    <div class="row align-items-center">
+      <div class="col-md-6"><h2>Get the latest tech accessory deals</h2><p>Subscribe for new arrivals, tips and exclusive offers. No spam, unsubscribe anytime.</p></div>
+      <div class="col-md-6">
+        <form class="nl-form" id="nlForm" novalidate><input type="email" id="nlEmail" placeholder="you@example.com" aria-label="Email address" required><button class="btn btn-accent px-4" type="submit">Subscribe</button></form>
+        <div class="nl-msg" id="nlMsg" role="status"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container-xxl">
+    <div class="f-row row g-4">
+      <div class="col-lg-4"><h6>Popular brands</h6><ul class="f-links"><li><a href="products.html?brand=Logitech">Logitech</a></li><li><a href="products.html?brand=Razer">Razer</a></li><li><a href="products.html?brand=Samsung">Samsung</a></li><li><a href="products.html?brand=Kingston">Kingston</a></li><li><a href="products.html?brand=Anker">Anker</a></li><li><a href="products.html?brand=TP-Link">TP-Link</a></li><li><a href="products.html?brand=Dell">Dell</a></li></ul></div>
+      <div class="col-lg-4"><h6>Shop by type</h6><ul class="f-links"><li><a href="products.html?type=keyboard">Keyboards</a></li><li><a href="products.html?type=mouse">Mice</a></li><li><a href="products.html?type=monitor">Monitors</a></li><li><a href="products.html?type=nvme">SSDs</a></li><li><a href="products.html?type=ram">Memory</a></li><li><a href="products.html?type=headset">Headsets</a></li><li><a href="products.html?type=charger">Chargers</a></li></ul></div>
+      <div class="col-lg-4"><h6>Popular searches</h6><ul class="f-links"><li><a href="products.html?q=Wireless">Wireless mouse</a></li><li><a href="products.html?q=Mechanical">Mechanical keyboard</a></li><li><a href="products.html?q=1TB">1TB SSD</a></li><li><a href="products.html?q=DDR5">DDR5 RAM</a></li><li><a href="products.html?q=USB-C">USB-C hub</a></li><li><a href="products.html?q=Gaming">Gaming gear</a></li></ul></div>
+    </div>
+    <div class="f-row">
+      <h6>Shop</h6>
+      <div class="f-shop"><a href="#">Wearables</a><a href="products.html">Computer Accessories</a><a href="#">Cameras &amp; Photography</a><a href="#">Gaming</a><a href="#">Printers &amp; Office</a><a href="#">Health &amp; Personal Care</a><a href="#">Networking</a><a href="#">Components &amp; Storage</a><a href="#">Computers &amp; Laptops</a><a href="#">TV, Monitors &amp; Displays</a><a href="#">Mobiles &amp; Tablets</a><a href="#">Electronics</a><a href="#">Cables &amp; Connectivity</a><a href="#">Smart Home</a><a href="#">Home, Kitchen &amp; Lifestyle</a><a href="#">Power &amp; Charging</a><a href="#">Audio</a><a href="#">Software &amp; Licences</a></div>
+    </div>
+    <div class="f-row row g-4">
+      <div class="col-lg-5 col-md-6">
+        <div class="mb-2" style="font-family:var(--font-head);font-weight:700;font-size:1.2rem;color:#fff">HalaQ<span style="color:var(--hq-accent)">Store</span></div>
+        <ul class="f-list f-contact">
+          <li><i class="bi bi-geo-alt"></i><span>Hala Q Technology, C-Ring Road, Al Sadd, Doha, Qatar</span></li>
+          <li><i class="bi bi-telephone"></i><a href="tel:+97440001234">+974 4000 1234</a></li>
+          <li><i class="bi bi-envelope"></i><a href="mailto:support@halaqstore.com">support@halaqstore.com</a></li>
+        </ul>
+        <a href="https://wa.me/97440001234" target="_blank" rel="noopener" class="whatsapp-btn"><i class="bi bi-whatsapp"></i>Chat on WhatsApp</a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-6"><h6>Help</h6><ul class="f-list"><li><a href="#">Track order</a></li><li><a href="#">Your cart</a></li><li><a href="#">Returns &amp; refunds</a></li><li><a href="#">Warranty claims</a></li></ul></div>
+      <div class="col-lg-4 col-md-3 col-6"><h6>About</h6><ul class="f-list"><li><a href="#">Blog</a></li><li><a href="#">Contact</a></li><li><a href="#">Returns policy</a></li><li><a href="#">Privacy policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div>© <span id="yr">2026</span> Hala Q Technology. All rights reserved.</div>
+      <div class="pay-icons" aria-label="Accepted payment methods">
+        <span class="pay-icon" title="QPay"><svg viewBox="0 0 60 20"><text x="0" y="15" font-family="Arial,sans-serif" font-weight="700" font-size="15" fill="#8A1538">Q</text><text x="11" y="15" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="#222">Pay</text></svg></span>
+        <span class="pay-icon" title="Visa"><svg viewBox="0 0 48 16"><text x="0" y="14" font-family="Arial,sans-serif" font-style="italic" font-weight="900" font-size="16" fill="#1A1F71">VISA</text></svg></span>
+        <span class="pay-icon" title="Mastercard"><svg viewBox="0 0 34 20"><circle cx="12" cy="10" r="9" fill="#EB001B"/><circle cx="22" cy="10" r="9" fill="#F79E1B" fill-opacity=".9"/></svg></span>
+        <span class="pay-icon" title="Apple Pay"><svg viewBox="0 0 54 20"><path d="M9.6 4.2c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 1.9-.5 2.5-1.2zm.9 1.4c-1.4-.1-2.6.8-3.2.8-.7 0-1.7-.8-2.8-.7C3 5.7 1.7 6.5 1 7.8c-1.5 2.6-.4 6.4 1.1 8.5.7 1 1.5 2.2 2.6 2.1 1-.1 1.4-.7 2.7-.7 1.2 0 1.6.7 2.7.6 1.1 0 1.8-1 2.5-2.1.8-1.1 1.1-2.2 1.1-2.3 0 0-2.2-.8-2.2-3.3 0-2.1 1.7-3.1 1.8-3.1-1-1.4-2.5-1.6-3-1.6z" fill="#000"/><text x="17" y="15" font-family="Arial,sans-serif" font-weight="600" font-size="13" fill="#000">Pay</text></svg></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Cart drawer -->
+<div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title" id="cartDrawerLabel">Your cart <span class="text-muted fw-normal fs-6" id="drawerCount">(0 items)</span></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="ship-progress"><div id="shipText"></div><div class="bar"><span id="shipBar" style="width:0%"></span></div></div>
+  <div class="offcanvas-body pt-0" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="d-flex justify-content-between fw-semibold mb-1"><span>Subtotal</span><strong id="cartSubtotal" style="font-family:var(--font-head);font-size:1.15rem;color:var(--hq-primary-dark)">QAR 0.00</strong></div>
+    <p class="small text-muted mb-3">Delivery and installation options shown at checkout.</p>
+    <button class="btn btn-accent w-100 py-2 mb-2" id="checkoutBtn" disabled>Checkout securely</button>
+    <button class="btn btn-outline-hq w-100 py-2" data-bs-dismiss="offcanvas">Continue shopping</button>
+  </div>
+</div>
+
+
+<!-- Request a quote -->
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title" id="quoteTitle">Request a quote</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="quoteFormWrap">
+          <p class="small text-muted mb-3">Our business team replies within 2 working hours with volume pricing and delivery options.</p>
+          <div class="quote-item mb-3 d-none" id="quoteItem"><img id="quoteImg" src="" alt=""><div><div class="p-brand mb-0" id="quoteBrand"></div><div class="small fw-semibold" id="quoteName"></div></div></div>
+          <form id="quoteForm" novalidate>
+            <div class="row g-2">
+              <div class="col-sm-6"><label class="form-label small fw-semibold" for="qName">Full name</label><input class="form-control" id="qName" required></div>
+              <div class="col-sm-6"><label class="form-label small fw-semibold" for="qPhone">Mobile number</label><div class="input-group"><span class="input-group-text">+974</span><input class="form-control" id="qPhone" inputmode="numeric" maxlength="8" placeholder="5555 1234" required></div></div>
+              <div class="col-sm-8"><label class="form-label small fw-semibold" for="qCompany">Company <span class="text-muted fw-normal">(optional)</span></label><input class="form-control" id="qCompany"></div>
+              <div class="col-sm-4"><label class="form-label small fw-semibold" for="qQty">Quantity</label><input class="form-control" id="qQty" type="number" min="1" value="1"></div>
+              <div class="col-12"><label class="form-label small fw-semibold" for="qNotes">What do you need?</label><textarea class="form-control" id="qNotes" rows="3" placeholder="e.g. 25 keyboard and mouse sets and 10 docking stations for our office in West Bay"></textarea></div>
+            </div>
+            <div class="small text-danger mt-2" id="quoteErr" role="alert"></div>
+            <div class="d-flex gap-2 mt-3">
+              <button type="submit" class="btn btn-accent flex-fill py-2">Send request</button>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-outline-hq py-2" id="quoteWa"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
+            </div>
+          </form>
+        </div>
+        <div id="quoteDone" class="text-center py-4 d-none">
+          <i class="bi bi-check-circle-fill" style="font-size:3rem;color:var(--hq-primary)"></i>
+          <h5 class="mt-3">Request sent</h5>
+          <p class="text-muted small mb-3">We’ll call you on <strong id="quoteDonePhone"></strong> within 2 working hours.</p>
+          <button class="btn btn-hq px-4" data-bs-dismiss="modal">Continue shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:1090">
+  <div id="cartToast" class="toast hq-toast" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="2600">
+    <div class="toast-body"><img id="toastImg" src="" alt=""><div class="flex-fill"><div class="fw-semibold">Added to HalaQStore cart!</div><div class="small opacity-75 text-truncate" style="max-width:200px" id="toastTitle"></div></div><button type="button" class="btn btn-sm btn-accent" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer">View</button></div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/catalog.js"></script>
+<script src="assets/js/store.js"></script>
+<script>
+/* =========================================================
+   Product details: product.html?id=13
+   ========================================================= */
+
+/* Demo reviews – replace with real customer reviews */
+const REVIEW_POOL = [
+  { n: 'Ahmed K.', r: 5, t: 'Arrived the same afternoon', b: 'Ordered before lunch and it reached my office in West Bay by 5 PM. Genuine box with the warranty card inside.' },
+  { n: 'Priya S.', r: 5, t: 'Exactly as described', b: 'Set up in a few minutes and works perfectly. Better price than I found in the malls.' },
+  { n: 'Omar A.', r: 4, t: 'Good value', b: 'Solid build and does everything I need. The team answered my questions on WhatsApp before I ordered.' },
+  { n: 'Maria L.', r: 5, t: 'Happy with it', b: 'Using it every day for work. Packaging was neat and the courier called before arriving.' },
+  { n: 'Faisal M.', r: 5, t: 'Second order, still impressed', b: 'Smooth checkout and quick delivery to Lusail. Will keep buying here.' },
+  { n: 'John D.', r: 4, t: 'Does the job well', b: 'Works well and feels well made. I only wish it came in more colours.' }
+];
+const AGO = ['3 days ago', '1 week ago', '2 weeks ago', '1 month ago', '2 months ago'];
+
+$(function () {
+  const p = byId(new URLSearchParams(location.search).get('id'));
+  const recentIds = HQ.recent();
+
+  if (!p) {
+    $('#pdp, #details, #brandBlock').addClass('d-none');
+    $('#notFound').removeClass('d-none');
+    $('#crumbs').append('<i class="bi bi-chevron-right"></i><span>Product not found</span>');
+    document.title = 'Product not found | HalaQStore';
+    renderRail('#similarRail', P.filter(x => x.featured), '#similarBlock');
+    $('#similarTitle').text('Popular right now');
+    finish();
+    return;
+  }
+  HQ.addRecent(p.id);
+
+  const tLabel = typeLabel(p.type);
+  const info = TYPE_INFO[p.type];
+  const pct = p.old ? Math.round((1 - p.price / p.old) * 100) : 0;
+  const fmt = n => n.toLocaleString('en-US', { minimumFractionDigits: 2 });
+  const fit = ['nvme', 'ssd', 'ram'].includes(p.type);
+  const MAX = p.lowStock ? 3 : 10;
+  let qty = 1;
+
+  /* ---------- Meta ---------- */
+  document.title = `${p.title} | Buy in Qatar – HalaQStore`;
+  $('meta[name="description"]').attr('content', `${p.desc} ${p.quote ? 'Request a business quote' : 'Buy for ' + qar(p.price)} at HalaQStore with official warranty and same-day delivery in Doha.`);
+  const ld = { '@context': 'https://schema.org', '@type': 'Product', name: p.title, sku: p.sku, description: p.desc, category: tLabel, brand: { '@type': 'Brand', name: p.brand } };
+  if (!p.quote) ld.offers = { '@type': 'Offer', priceCurrency: 'QAR', price: p.price.toFixed(2), availability: 'https://schema.org/InStock', url: location.href };
+  const s = document.createElement('script'); s.type = 'application/ld+json'; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
+
+  /* ---------- Breadcrumb + header info ---------- */
+  $('#crumbs').append(`<i class="bi bi-chevron-right"></i><a href="products.html?type=${p.type}">${esc(tLabel)}</a><i class="bi bi-chevron-right"></i><span>${esc(p.title)}</span>`);
+  $('#pdpBrand').attr('href', `products.html?brand=${encodeURIComponent(p.brand)}`).text(p.brand);
+  $('#pdpTitle').text(p.title);
+  $('#pdpRating').html(`${starsHTML(p.rating)}<span><strong>${p.rating.toFixed(1)}</strong> · ${p.reviews} reviews</span>`);
+  $('#pdpSku').text(p.sku);
+  $('#pdpWarranty').html(`<i class="bi bi-shield-check me-1"></i>${esc(p.warranty)} warranty`);
+  $('#pdpDesc').text(p.desc);
+  $('#pdpKeySpecs').html(Object.entries(p.facts).slice(0, 4).map(([k, v]) => `<div class="ks"><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join(''));
+
+  /* ---------- Gallery ---------- */
+  let gi = 0;
+  $('#pdpBadge').html(p.isNew ? '<span class="p-badge new">New</span>' : pct ? `<span class="p-badge sale">-${pct}%</span>` : '');
+  $('#pdpThumbs').html(p.gallery.map((g, i) => `<button type="button" class="pdp-thumb${g.photo ? ' photo' : ''}" data-i="${i}" aria-label="Show image ${i + 1} of ${p.gallery.length}${g.label ? ': ' + esc(g.label) : ''}"><img src="${g.src}" alt="" loading="lazy"></button>`).join(''));
+  function showImage(i) {
+    gi = (i + p.gallery.length) % p.gallery.length;
+    const g = p.gallery[gi];
+    $('#pdpMain').removeClass('zoom').toggleClass('photo', !!g.photo);
+    $('#pdpImg').attr({ src: g.src, alt: p.title + (g.label ? ' – ' + g.label.toLowerCase() : '') });
+    $('.pdp-thumb').removeClass('active').attr('aria-current', null).eq(gi).addClass('active').attr('aria-current', 'true');
+  }
+  showImage(0);
+  $('.pdp-arrow').toggle(p.gallery.length > 1);
+  $(document).on('click', '.pdp-thumb', function () { showImage(+$(this).data('i')); });
+  $('.pdp-arrow').on('click', function (e) { e.stopPropagation(); showImage(gi + ($(this).hasClass('next') ? 1 : -1)); });
+  $('#pdpMain')
+    .on('click', function () { if (!p.gallery[gi].photo) $(this).toggleClass('zoom'); })
+    .on('keydown', function (e) {
+      if (e.key === 'ArrowRight') showImage(gi + 1);
+      else if (e.key === 'ArrowLeft') showImage(gi - 1);
+      else if ((e.key === 'Enter' || e.key === ' ') && e.target === this) { e.preventDefault(); $(this).trigger('click'); }
+    })
+    .on('mousemove', function (e) {
+      const r = this.getBoundingClientRect();
+      $('#pdpImg').css('transform-origin', `${(e.clientX - r.left) / r.width * 100}% ${(e.clientY - r.top) / r.height * 100}%`);
+    })
+    .on('mouseleave', function () { $(this).removeClass('zoom'); });
+
+  /* ---------- Buy box ---------- */
+  const qtyHTML = `<div class="qty-control qty-lg"><button type="button" class="js-pqty" data-d="-1" aria-label="Decrease quantity">−</button><input id="pdpQty" value="1" inputmode="numeric" aria-label="Quantity"><button type="button" class="js-pqty" data-d="1" aria-label="Increase quantity">+</button></div>`;
+  const wishHTML = `<button type="button" class="wish-lg" data-id="${p.id}" aria-label="Save to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>`;
+  $('#pdpBuy').html(p.quote ? `
+    <div class="pdp-price-box">
+      <div class="pdp-price"><span class="now quote">Price on request</span></div>
+      <p class="small text-muted mb-3">Business item. Tell us how many you need and our team replies within 2 working hours with volume pricing, delivery date and invoice terms.</p>
+      <div class="pdp-actions">${qtyHTML}<button type="button" class="btn btn-accent flex-fill js-pdp-quote" id="mainCta"><i class="bi bi-chat-square-text"></i>Request a Quote</button>${wishHTML}</div>
+      <a class="btn btn-outline-hq w-100 mt-2 pdp-cta" target="_blank" rel="noopener" href="https://wa.me/${HQ.WA}?text=${encodeURIComponent('Hello HalaQStore, I have a question about ' + p.title + ' (' + p.sku + ').')}"><i class="bi bi-whatsapp"></i>Ask on WhatsApp</a>
+    </div>` : `
+    <div class="pdp-price-box">
+      <div class="pdp-price"><span class="now"><small>QAR</small>${fmt(p.price)}</span>${p.old ? `<span class="old">${qar(p.old)}</span><span class="save-pill">Save ${qar(p.old - p.price)}</span>` : ''}</div>
+      <div class="stock${p.lowStock ? ' low' : ''}"><i class="bi ${p.lowStock ? 'bi-exclamation-circle-fill' : 'bi-check-circle-fill'}"></i>${p.lowStock ? 'Only 3 left in stock' : 'In stock'} · ready to ship from Doha</div>
+      <div class="pdp-actions">${qtyHTML}<button type="button" class="btn btn-hq flex-fill js-pdp-add" id="mainCta"><i class="bi bi-bag-plus"></i>Add to Cart</button>${wishHTML}</div>
+      <button type="button" class="btn btn-accent w-100 mt-2 pdp-cta js-pdp-buy"><i class="bi bi-lightning-charge-fill"></i>Buy now</button>
+      <p class="pdp-note"><i class="bi bi-chat-dots"></i><span>Need help choosing? <a href="https://wa.me/${HQ.WA}?text=${encodeURIComponent('Hello HalaQStore, I have a question about ' + p.title + ' (' + p.sku + ').')}" target="_blank" rel="noopener">Ask us on WhatsApp</a> and we’ll reply in minutes during store hours.</span></p>
+    </div>`);
+
+  function setQty(n) { qty = Math.max(1, Math.min(MAX, n || 1)); $('#pdpQty').val(qty); }
+  $(document).on('click', '.js-pqty', function () { setQty(qty + +$(this).data('d')); });
+  $(document).on('change', '#pdpQty', function () { setQty(parseInt(this.value.replace(/\D/g, ''), 10)); });
+
+  function addFeedback($b) {
+    const html = $b.html();
+    $b.addClass('added').html('<i class="bi bi-check2"></i>Added to cart');
+    setTimeout(() => $b.removeClass('added').html(html), 1500);
+  }
+  $(document).on('click', '.js-pdp-add', function () { HQ.addToCart(p.id, qty); addFeedback($(this)); });
+  $(document).on('click', '.js-pdp-buy', function () { HQ.addToCart(p.id, qty, true); bootstrap.Offcanvas.getOrCreateInstance('#cartDrawer').show(); });
+  $(document).on('click', '.js-pdp-quote', function () { HQ.openQuote(p.id, qty); });
+
+  /* ---------- Delivery card ---------- */
+  function deliveryText() {
+    const now = new Date();
+    const doha = new Date(now.getTime() + (now.getTimezoneOffset() + 180) * 60000); // Qatar is UTC+3
+    const mins = 14 * 60 - (doha.getHours() * 60 + doha.getMinutes());
+    return mins > 0
+      ? `Order within <span class="countdown">${Math.floor(mins / 60)}h ${mins % 60}m</span> to get it today in Doha`
+      : 'Order now to get it <strong class="d-inline">tomorrow</strong> in Doha';
+  }
+  $('#pdpDelivery').html(`
+    <div class="dc-row"><i class="bi bi-truck"></i><div><strong>${!p.quote && p.price >= HQ.FREE ? 'Free express delivery' : 'Express delivery in Doha'}</strong><span id="deliveryText">${deliveryText()}</span></div></div>
+    ${fit ? '<div class="dc-row"><i class="bi bi-tools"></i><div><strong>Free fitting at our Doha store</strong>Bring your laptop or PC and we’ll install it while you wait.</div></div>' : ''}
+    <div class="dc-row"><i class="bi bi-shield-check"></i><div><strong>${esc(p.warranty)} official warranty</strong>Genuine stock. We handle claims for you in Doha.</div></div>
+    <div class="dc-row"><i class="bi bi-arrow-counterclockwise"></i><div><strong>7-day returns</strong>Unopened items can be returned within 7 days.</div></div>
+    <div class="dc-row"><i class="bi bi-credit-card"></i><div><strong>Secure payment</strong>QPay, Visa, Mastercard and Apple Pay.</div></div>`);
+  setInterval(() => $('#deliveryText').html(deliveryText()), 30000);
+
+  /* ---------- Share ---------- */
+  $('#shareWa').attr('href', 'https://wa.me/?text=' + encodeURIComponent(p.title + ' – ' + location.href));
+  $('#shareMail').attr('href', 'mailto:?subject=' + encodeURIComponent(p.title) + '&body=' + encodeURIComponent(location.href));
+  $('#shareCopy').on('click', function () {
+    const done = ok => { $('#copyMsg').text(ok ? 'Link copied' : 'Copy the link from your address bar'); setTimeout(() => $('#copyMsg').text(''), 2200); };
+    if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(() => done(true), () => done(false)); else done(false);
+  });
+
+  /* ---------- Tabs ---------- */
+  $('#tabOverview').html(`
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <h2>About this product</h2>
+        <p>${esc(p.desc)} ${esc(info.about)}</p>
+        <h3>Highlights</h3>
+        <ul class="pdp-features">
+          ${Object.entries(p.facts).map(([k, v]) => `<li><i class="bi bi-check2-circle"></i><span><strong>${esc(k)}:</strong> ${esc(v)}</span></li>`).join('')}
+          ${info.features.map(f => `<li><i class="bi bi-check2-circle"></i><span>${esc(f)}</span></li>`).join('')}
+        </ul>
+      </div>
+      <div class="col-lg-5">
+        <div class="why-box">
+          <h3>Why buy from HalaQStore</h3>
+          <div class="why-item"><i class="bi bi-patch-check"></i><div><strong>Genuine with local warranty</strong>Sourced through regional distribution, with claims handled in Doha.</div></div>
+          <div class="why-item"><i class="bi bi-lightning-charge"></i><div><strong>Same-day delivery</strong>Order before 2 PM for delivery today across Doha.</div></div>
+          <div class="why-item"><i class="bi bi-whatsapp"></i><div><strong>Real advice on WhatsApp</strong>Send your laptop or PC model and we’ll confirm what fits.</div></div>
+          ${p.quote ? '<div class="why-item"><i class="bi bi-building"></i><div><strong>Business accounts</strong>Volume pricing, invoice billing and a dedicated account manager.</div></div>' : ''}
+        </div>
+      </div>
+    </div>`);
+
+  $('#tabSpecs').html(`<h2>Specifications</h2><table class="spec-table"><tbody>${Object.entries(p.specs).map(([k, v]) => `<tr><th scope="row">${esc(k)}</th><td>${esc(v)}</td></tr>`).join('')}</tbody></table>`);
+  $('#tabBox').html(`<h2>What’s in the box</h2><div class="box-list">${info.box.map(b => `<div class="box-item"><i class="bi bi-box-seam"></i>${esc(b)}</div>`).join('')}</div><p class="small text-muted mt-3 mb-0">Box contents can vary slightly by production batch.</p>`);
+
+  // Reviews (demo)
+  const r = p.rating;
+  const dist = (() => {
+    const p5 = Math.round((r - 3.6) * 70), p4 = Math.round((5 - r) * 45), rest = Math.max(0, 100 - p5 - p4);
+    const p3 = Math.round(rest * .6), p2 = Math.round(rest * .25);
+    return [p5, p4, p3, p2, Math.max(0, 100 - p5 - p4 - p3 - p2)];
+  })();
+  const picks = [0, 1, 2].map(i => REVIEW_POOL[(p.id + i * 2) % REVIEW_POOL.length]);
+  $('#tabRevCount').text(p.reviews);
+  $('#tabReviews').html(`
+    <h2>Customer reviews</h2>
+    <div class="rating-summary">
+      <div class="d-flex align-items-center gap-3"><div class="rs-score">${r.toFixed(1)}</div><div class="rs-stars">${starsHTML(r)}<div class="small text-muted mt-1">Based on ${p.reviews} reviews</div></div></div>
+      <div class="rs-bars">${dist.map((v, i) => `<div class="rs-bar"><span>${5 - i}★</span><div class="track"><span style="width:${v}%"></span></div><span>${v}%</span></div>`).join('')}</div>
+    </div>
+    ${picks.map((x, i) => `
+      <article class="review">
+        <div class="review-head"><span class="avatar">${esc(x.n.split(' ').map(w => w[0]).join(''))}</span><div><strong>${esc(x.n)}</strong><small>${AGO[(p.id + i) % AGO.length]}</small></div><span class="verified"><i class="bi bi-patch-check-fill me-1"></i>Verified purchase</span></div>
+        ${starsHTML(x.r)}
+        <h4>${esc(x.t)}</h4>
+        <p>${esc(x.b)}</p>
+      </article>`).join('')}`);
+  $('.js-to-reviews').on('click', function (e) {
+    e.preventDefault();
+    bootstrap.Tab.getOrCreateInstance(document.getElementById('reviewsTabBtn')).show();
+    $('html,body').animate({ scrollTop: $('#details').offset().top - 100 }, 400);
+  });
+
+  /* ---------- Related rails ---------- */
+  let similar = P.filter(x => x.type === p.type && x.id !== p.id);
+  if (similar.length < 4) similar = similar.concat(P.filter(x => x.id !== p.id && x.type !== p.type && x.brand === p.brand));
+  renderRail('#similarRail', similar.slice(0, 12), '#similarBlock');
+  $('#similarTitle').text(`More in ${tLabel}`);
+  $('#similarAll').attr('href', `products.html?type=${p.type}`);
+  const sameBrand = P.filter(x => x.brand === p.brand && x.id !== p.id && !similar.slice(0, 12).includes(x));
+  renderRail('#brandRailP', sameBrand, '#brandBlock');
+  $('#brandTitle').text(`More from ${p.brand}`);
+  $('#brandAll').attr('href', `products.html?brand=${encodeURIComponent(p.brand)}`);
+
+  /* ---------- Sticky buy bar ---------- */
+  $('#sbImg').attr('src', p.art);
+  $('#sbTitle').text(p.title);
+  $('#sbPrice').html(p.quote ? 'Price on request' : qar(p.price));
+  $('#sbAction').html(p.quote
+    ? '<button type="button" class="btn btn-accent js-pdp-quote"><i class="bi bi-chat-square-text me-1"></i>Request a Quote</button>'
+    : '<button type="button" class="btn btn-hq js-pdp-add"><i class="bi bi-bag-plus me-1"></i>Add to Cart</button>');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => {
+      const show = !e.isIntersecting && e.boundingClientRect.top < 0;
+      $('#stickyBuy').toggleClass('show', show).attr('aria-hidden', !show);
+      $('body').toggleClass('has-sticky', show);
+    }).observe(document.getElementById('mainCta'));
+  }
+
+  finish();
+
+  function renderRail(sel, items, block) {
+    $(block).toggleClass('d-none', !items.length);
+    $(sel).html(items.map(cardHTML).join(''));
+  }
+  function finish() {
+    const rec = recentIds.filter(id => !p || id !== p.id).map(byId).slice(0, 12);
+    renderRail('#recentRail', rec, '#recentBlock');
+    HQ.syncWish();
+    HQ.bindRails();
+  }
+});
+</script>
+</body>
+</html>
