@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HalaQStore | Gaming, PC Upgrades &amp; Tech Accessories in Qatar</title>
+<meta name="description" content="Keyboards, mice, monitors, SSDs, RAM, headsets and chargers from Logitech, Razer, Samsung, Kingston and Anker. Genuine stock, same-day delivery in Doha.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Announcement -->
+<div class="announce">
+  <div class="wrap announce-in">
+    <span><i class="bi bi-lightning-charge-fill"></i> Same-day delivery in Doha · Free over QAR 200</span>
+    <div class="announce-links">
+      <a href="#">Track order</a>
+      <a href="#">Store locator</a>
+      <button class="lang" type="button" aria-label="Switch language">EN <span>|</span> عربي</button>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu"><i class="bi bi-list"></i></button>
+    <a href="#" class="logo" aria-label="HalaQStore home"><span class="logo-mark">Q</span><span class="logo-word">HalaQ<b>Store</b></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#trending">Trending</a>
+      <a href="#deal">Deals</a>
+      <a href="#gaming">Gaming</a>
+      <a href="#brands">Brands</a>
+      <a href="#business">Business</a>
+    </nav>
+    <form class="search" role="search" onsubmit="event.preventDefault();location.href='../products.html?q='+encodeURIComponent(this.q.value)">
+      <i class="bi bi-search"></i>
+      <input name="q" type="search" placeholder="Search SSDs, keyboards, monitors…" aria-label="Search products">
+      <kbd>/</kbd>
+    </form>
+    <div class="hdr-actions">
+      <button class="icon-btn search-toggle" id="searchToggle" aria-label="Search"><i class="bi bi-search"></i></button>
+      <a href="#" class="icon-btn" aria-label="Account"><i class="bi bi-person"></i></a>
+      <a href="#" class="icon-btn" aria-label="Wishlist"><i class="bi bi-heart"></i><span class="dot" id="wishCount" hidden>0</span></a>
+      <button class="icon-btn" id="cartBtn" aria-label="Open cart"><i class="bi bi-bag"></i><span class="dot" id="cartCount" hidden>0</span></button>
+    </div>
+  </div>
+  <div class="catbar"><div class="wrap catbar-in" id="catbar"></div></div>
+</header>
+
+<!-- Mobile menu -->
+<div class="drawer drawer-left" id="menuDrawer" aria-hidden="true">
+  <div class="drawer-head"><span class="logo-word">HalaQ<b>Store</b></span><button class="icon-btn" data-close aria-label="Close menu"><i class="bi bi-x-lg"></i></button></div>
+  <nav class="drawer-nav" id="drawerNav"></nav>
+</div>
+
+<!-- Cart -->
+<div class="drawer drawer-right" id="cartDrawer" aria-hidden="true">
+  <div class="drawer-head"><h3>Your bag</h3><button class="icon-btn" data-close aria-label="Close cart"><i class="bi bi-x-lg"></i></button></div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div><div class="ship-text" id="shipText"></div><div class="ship-bar"><span id="shipBar"></span></div></div>
+    <div class="cart-total"><span>Subtotal</span><strong id="cartTotal">QAR 0.00</strong></div>
+    <a href="#" class="btn btn-glow btn-block">Checkout <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+<div class="scrim" id="scrim"></div>
+
+<main>
+
+<!-- Hero banner slider -->
+<section class="hero">
+  <div class="wrap">
+    <div class="slider" id="slider" aria-roledescription="carousel" aria-label="Featured offers">
+      <div class="slides" id="slides">
+        <div class="slide s-violet" role="group" aria-label="Slide 1 of 3">
+          <div class="slide-copy">
+            <span class="slide-tag">Gaming week</span>
+            <h1>Mechanical keyboards built to win</h1>
+            <p>Razer and Logitech gaming gear with official warranty, delivered same day in Doha.</p>
+            <a href="#gaming" class="btn btn-dark">Shop gaming <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="slide-art"><img data-photo="1595225476474-87563907a212" alt="Mechanical keyboard with colourful keycaps"><span class="slide-price">from<b>QAR 449</b></span></div>
+        </div>
+        <div class="slide s-lime" role="group" aria-label="Slide 2 of 3">
+          <div class="slide-copy">
+            <span class="slide-tag">PC upgrades</span>
+            <h2>Up to 7,450 MB/s with Gen 4 NVMe</h2>
+            <p>Samsung and Kingston SSDs and DDR5 memory. Free fitting at our Al Sadd store.</p>
+            <a href="#storage" class="btn btn-dark">Shop upgrades <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="slide-art"><img data-photo="1597872200969-2b65d56bd16b" alt="Inside a gaming PC with RGB lighting"><span class="slide-price">save<b>15%</b></span></div>
+        </div>
+        <div class="slide s-peach" role="group" aria-label="Slide 3 of 3">
+          <div class="slide-copy">
+            <span class="slide-tag">For business</span>
+            <h2>Equip the whole office in one order</h2>
+            <p>Monitors, docks and keyboards for teams of 5 to 500 with volume pricing.</p>
+            <a href="#business" class="btn btn-dark">Get a quote <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="slide-art"><img data-photo="1497366216548-37526070297c" alt="Modern open-plan office"><span class="slide-price">bulk<b>deals</b></span></div>
+        </div>
+      </div>
+      <button class="sl-btn sl-prev" id="slPrev" aria-label="Previous slide"><i class="bi bi-chevron-left"></i></button>
+      <button class="sl-btn sl-next" id="slNext" aria-label="Next slide"><i class="bi bi-chevron-right"></i></button>
+      <div class="sl-dots" id="slDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Perks -->
+<section class="perks">
+  <div class="wrap"><div class="perks-in">
+    <div class="perk"><i class="bi bi-truck"></i><div><strong>Same-day delivery</strong><span>Order by 4pm in Doha</span></div></div>
+    <div class="perk"><i class="bi bi-patch-check"></i><div><strong>100% genuine</strong><span>Official local warranty</span></div></div>
+    <div class="perk"><i class="bi bi-arrow-repeat"></i><div><strong>14-day returns</strong><span>No questions asked</span></div></div>
+    <div class="perk"><i class="bi bi-credit-card-2-front"></i><div><strong>Pay your way</strong><span>QPay, cards, Apple Pay, COD</span></div></div>
+  </div></div>
+</section>
+
+<!-- Categories -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><div><h2>Shop by category</h2></div><a href="../products.html" class="link-more">All categories <i class="bi bi-arrow-right"></i></a></div>
+    <div class="cats" id="cats"></div>
+  </div>
+</section>
+
+<!-- Trending (tabs) -->
+<section class="sec" id="trending">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2>Trending this week</h2><p>What Doha is adding to cart right now</p></div>
+      <div class="sec-tools">
+        <div class="tabs" role="tablist" id="tabs">
+          <button role="tab" class="active" data-tab="featured">Featured</button>
+          <button role="tab" data-tab="logitech">Logitech</button>
+          <button role="tab" data-tab="samsung">Samsung</button>
+          <button role="tab" data-tab="anker">Anker</button>
+        </div>
+        <div class="nav-arrows"><button class="r-btn" data-dir="-1" aria-label="Scroll left"><i class="bi bi-chevron-left"></i></button><button class="r-btn" data-dir="1" aria-label="Scroll right"><i class="bi bi-chevron-right"></i></button></div>
+      </div>
+    </div>
+    <div class="rail" id="trendRail"></div>
+  </div>
+</section>
+
+<section class="sec" data-rail="toprated"></section>
+
+<!-- Deal of the day -->
+<section class="sec" id="deal">
+  <div class="wrap">
+    <div class="deal">
+      <div class="deal-copy">
+        <span class="kick">Deal of the day</span>
+        <h2 id="dealTitle"></h2>
+        <p id="dealDesc"></p>
+        <div class="deal-price"><strong id="dealPrice"></strong><s id="dealOld"></s><span class="save" id="dealSave"></span></div>
+        <div class="deal-row">
+          <div class="countdown" id="countdown">
+            <div><b data-h>00</b><span>hrs</span></div>
+            <div><b data-m>00</b><span>min</span></div>
+            <div><b data-s>00</b><span>sec</span></div>
+          </div>
+          <button class="btn btn-lime" id="dealAdd"><i class="bi bi-bag-plus"></i> Add to bag</button>
+        </div>
+      </div>
+      <div class="deal-visual"><img id="dealImg" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" data-rail="gaming" id="gaming"></section>
+<section class="sec" data-rail="storage" id="storage"></section>
+
+<!-- Promo banners -->
+<section class="sec">
+  <div class="wrap promos">
+    <a href="../products.html?type=hub" class="promo p-cyan"><div><h3>One cable. Every port.</h3><p>USB-C hubs and Thunderbolt docks for laptops and MacBooks.</p><span class="link-more">Shop hubs <i class="bi bi-arrow-right"></i></span></div><img data-photo="1618410320928-25228d811631" data-w="500" data-h="500" alt="Laptop desk with accessories"></a>
+    <a href="../products.html?type=charger" class="promo p-lime"><div><h3>Charge 3 devices at once</h3><p>65W GaN chargers and laptop power banks from Anker.</p><span class="link-more">Shop charging <i class="bi bi-arrow-right"></i></span></div><img data-photo="1600490722773-35753aea6332" data-w="500" data-h="500" alt="Compact USB-C charger"></a>
+  </div>
+</section>
+
+<section class="sec" data-rail="input"></section>
+<section class="sec" data-rail="display"></section>
+<section class="sec" data-rail="power"></section>
+<section class="sec" data-rail="budget"></section>
+
+<!-- Brands marquee -->
+<section class="sec" id="brands">
+  <div class="wrap">
+    <div class="sec-head"><div><h2>Official brands</h2></div></div>
+    <div class="marquee" aria-label="Brands"><div class="marquee-track" id="marquee"></div></div>
+  </div>
+</section>
+
+<section class="sec" data-rail="business"></section>
+
+<!-- Business -->
+<section class="sec" id="business">
+  <div class="wrap">
+    <div class="biz">
+      <div class="biz-copy">
+        <span class="kick">For business</span>
+        <h2>One supplier for every desk in the office.</h2>
+        <p>Monitors, docks, headsets and keyboards for teams of 5 to 500. Volume pricing, VAT invoices, net-30 terms and on-site setup across Qatar.</p>
+        <ul class="checks">
+          <li><i class="bi bi-check2-circle"></i> Dedicated account manager</li>
+          <li><i class="bi bi-check2-circle"></i> Quotes within 2 working hours</li>
+          <li><i class="bi bi-check2-circle"></i> Dell, Logitech &amp; Samsung business lines</li>
+        </ul>
+      </div>
+      <form class="quote" id="quoteForm">
+        <h3>Request a bulk quote</h3>
+        <label>Company<input required name="company" placeholder="Your company"></label>
+        <div class="two">
+          <label>Email<input required type="email" name="email" placeholder="you@company.qa"></label>
+          <label>Seats<input type="number" min="5" name="seats" placeholder="25"></label>
+        </div>
+        <label>What do you need?<textarea name="msg" rows="3" placeholder="e.g. 25 × 24&quot; monitors and docks"></textarea></label>
+        <button class="btn btn-glow btn-block" type="submit">Send request <i class="bi bi-send"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><div><h2>Loved across Qatar</h2><p>4.8 out of 5 from 3,100+ verified reviews</p></div></div>
+    <div class="reviews">
+      <figure class="review"><span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><blockquote>“Ordered a 990 PRO at 11am, it was installed in my PC by 3pm. Didn't even have to leave the office.”</blockquote><figcaption><span class="av">AK</span><div><strong>Ahmed K.</strong><small>Al Sadd · NVMe SSD</small></div></figcaption></figure>
+      <figure class="review"><span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><blockquote>“Genuine Razer stock with local warranty. Prices beat the malls and the WhatsApp support is actually helpful.”</blockquote><figcaption><span class="av">RM</span><div><strong>Rania M.</strong><small>The Pearl · Gaming keyboard</small></div></figcaption></figure>
+      <figure class="review"><span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span><blockquote>“We kitted out 40 desks with docks and monitors. One invoice, one delivery, zero headaches.”</blockquote><figcaption><span class="av">JS</span><div><strong>James S.</strong><small>West Bay · Business order</small></div></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="sec">
+  <div class="wrap">
+    <div class="nl">
+      <div><h2>Drops, deals &amp; restocks.</h2><p>Join 18,000 Qatar tech fans. One email a week, no spam.</p></div>
+      <form class="nl-form" id="nlForm"><input type="email" required placeholder="Your email address" aria-label="Email address"><button class="btn btn-lime" type="submit">Subscribe</button></form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div class="ftr-brand">
+        <a href="#" class="logo"><span class="logo-mark">Q</span><span class="logo-word">HalaQ<b>Store</b></span></a>
+        <p>Hala Q Technology, C-Ring Road, Al Sadd, Doha, Qatar</p>
+        <p><a href="tel:+97440001234">+974 4000 1234</a> · <a href="mailto:support@halaqstore.com">support@halaqstore.com</a></p>
+        <div class="socials"><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a><a href="https://wa.me/97440001234" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a></div>
+      </div>
+      <div><h4>Shop</h4><ul><li><a href="../products.html?type=keyboard">Keyboards</a></li><li><a href="../products.html?type=mouse">Mice</a></li><li><a href="../products.html?type=monitor">Monitors</a></li><li><a href="../products.html?type=nvme">SSDs</a></li><li><a href="../products.html?type=ram">Memory</a></li></ul></div>
+      <div><h4>Brands</h4><ul><li><a href="../products.html?brand=Logitech">Logitech</a></li><li><a href="../products.html?brand=Razer">Razer</a></li><li><a href="../products.html?brand=Samsung">Samsung</a></li><li><a href="../products.html?brand=Kingston">Kingston</a></li><li><a href="../products.html?brand=Anker">Anker</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="#">Track order</a></li><li><a href="#">Returns &amp; refunds</a></li><li><a href="#">Warranty claims</a></li><li><a href="#">Contact</a></li><li><a href="#">Privacy</a></li></ul></div>
+    </div>
+    <div class="ftr-bottom">
+      <span>© <span id="yr">2026</span> Hala Q Technology. All rights reserved.</span>
+      <div class="pays"><span>QPay</span><span>VISA</span><span>Mastercard</span><span> Pay</span><span>COD</span></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile tab bar -->
+<nav class="tabbar" aria-label="Quick links">
+  <a href="#" class="on"><i class="bi bi-house"></i><span>Home</span></a>
+  <a href="#trending"><i class="bi bi-grid"></i><span>Shop</span></a>
+  <a href="#deal"><i class="bi bi-fire"></i><span>Deals</span></a>
+  <button type="button" data-open-cart><i class="bi bi-bag"></i><span>Bag</span></button>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="catalog.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
